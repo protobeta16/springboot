@@ -1,4 +1,4 @@
-package com.dupont.michel.springBoot;
+package com.dupont.michel.springBoot.demoSecuringWebApplication;
 
 /**
  * Created by PMDT08841 on 15/09/2017.

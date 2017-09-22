@@ -1,4 +1,4 @@
-package com.dupont.michel.springBoot;
+package com.dupont.michel.springBoot.demoSecuringWebApplication;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;

@@ -1,4 +1,4 @@
-package com.dupont.michel.springBoot;
+package com.dupont.michel.springBoot.demoRestFullWebService;
 
 /**
  * Created by PMDT08841 on 14/09/2017.

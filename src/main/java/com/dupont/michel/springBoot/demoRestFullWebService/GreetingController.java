@@ -1,4 +1,4 @@
-package com.dupont.michel.springBoot;
+package com.dupont.michel.springBoot.demoRestFullWebService;
 
 import java.util.concurrent.atomic.AtomicLong;
 import org.springframework.web.bind.annotation.RequestMapping;
