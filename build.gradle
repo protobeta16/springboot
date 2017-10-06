@@ -1,9 +1,15 @@
 buildscript {
+    ext {
+        springBootVersion = '1.5.7.RELEASE'
+    }
     repositories {
         mavenCentral()
+        maven {
+            url "http://alm.sncf.fr/nexus/content/groups/public"
+        }
     }
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.7.RELEASE")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
     }
 }
 
@@ -25,8 +31,13 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
+    compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+    compile("org.springframework.boot:spring-boot-starter-jetty")
     compile("org.springframework.boot:spring-boot-starter-hateoas")
     testCompile("com.jayway.jsonpath:json-path")
     compile("org.springframework.boot:spring-boot-starter-web")
     testCompile('org.springframework.boot:spring-boot-starter-test')
+    compile("org.springframework.boot:spring-boot-starter-security")
+    testCompile('org.springframework.boot:spring-security-test')
+
 }
